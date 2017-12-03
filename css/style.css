@@ -14,7 +14,7 @@ body {
   height: 100%;
 }
 #brand{
-  writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
   margin: 0 0 0 0;
   font-size: 15vh;
   font-family: 'Oswald', sans-serif;
