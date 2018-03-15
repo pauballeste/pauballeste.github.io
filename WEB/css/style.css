@@ -35,6 +35,7 @@ nav > button {
     background-color: transparent;
     border: none;
     text-align: left;
+    font-family: "Helvetica Neue", sans-serif;
     font-size: 18px;
     color: white;
 }
