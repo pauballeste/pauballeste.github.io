@@ -91,6 +91,7 @@ nav {
     font-size: 18px;
     color: white;
     cursor: pointer;
+    width: 100%;
 }
 .btn-big{
     padding-left: 20px;
