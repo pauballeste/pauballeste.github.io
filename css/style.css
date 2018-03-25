@@ -1,27 +1,148 @@
 @charset "utf-8";
-body {
-  background-color: black;
+@keyframes firstmove {
+    from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
-#vid_container{
-  width: 100%;
-  height: 97vh;
+@keyframes fading {
+    from{opacity: 0} to{opacity: 1}
 }
-#vid{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#brand{
-  writing-mode: sideways-lr;
-  margin: 0 0 0 0;
-  font-size: 15vh;
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+body {
+	line-height: 1;
+    background-color: black;
+    color: white;  
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    align-content: right;
+    width: 100%;
+}
+h1 {
+    position: relative; 
+    font-family: 'Patua One', cursive;
+	font-size: 80px;
+    padding-top: 65vh;
+    text-align: center;
+    animation: firstmove 1s;
+    margin: 0 25px 0 25px;
+}
+h2 {
+    position: relative;
+    font-size: 50px;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    animation: firstmove 1s;
+    margin: 0 15px 0 15px;
+}
+main {
+    margin: 20px;
+}
+#pres{
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: fading 3s;
+}
+hr {
+    position: relative;
+    border: 5px solid #82B1FF; 
+    border-radius: 300px; 
+    height: 0px;
+    width: 200px;
+    animation: fading 4s;
+}
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    left: 0px;
+    margin: 15px 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    background-color: #82B1FF;
+    opacity: 0.98;
+    z-index: 1000;
+}
+.btn-cont > button {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.btn-big{
+    padding-left: 20px;
+}
+.btn-sml{
+	padding-left: 60px;
+}
+.bar-cont{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar-1, .bar-2, .bar-3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px;
+    transition: 0.4s;
+}
+.change .bar-1 {
+    transform: rotate(-45deg) translate(-8px, 7px);
+    width: 20px;
+}
+.change .bar-2 {
+    opacity: 0;
+}
+.change .bar-3 {
+    width: 20px;
+    transform: rotate(45deg) translate(-8px, -7px);
+}
+.visi .btn-cont{
+    display: block;
+}
+.dim #nav{
+    width: 150px;
+    height: initial;
+    transition: fading 1s;
+}
+@media only screen and (min-width: 601px) {
+    .bar-cont{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        position: fixed;
+        margin: 0;
+        width: 47px;
+        height: 40px;
+    }
+    .btn-cont{
+        display: none;
+    }
+}
+@media only screen and (min-width: 769px) {#alt-brand{display: none;}}
+@media only screen and (max-width: 768px) {#brand {display: none;}}
