@@ -16,7 +16,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -27,8 +27,9 @@ time, mark, audio, video {
 }
 body {
 	line-height: 1;
-    background-color: black;
-    color: white;  
+    background-color: #424242;
+    min-width: 500px;
+    color: #EEEEEE;  
     font-family: 'Open Sans', sans-serif;
 }
 header {
@@ -38,15 +39,15 @@ header {
 h1 {
     position: relative; 
     font-family: 'Patua One', cursive;
-	font-size: 80px;
-    padding-top: 65vh;
+    padding-top: 55vh;
+	font-size: 12vh;
     text-align: center;
     animation: firstmove 1s;
     margin: 0 25px 0 25px;
 }
 h2 {
     position: relative;
-    font-size: 50px;
+    font-size: 5vh;
     font-family: 'Patua One', cursive;
     text-align: center;
     animation: firstmove 1s;
@@ -55,9 +56,10 @@ h2 {
 main {
     margin: 20px;
 }
-#pres{
+#inici{
     height: 100vh;
     background-image: url(../img/main.jpg);
+    width: 100%
     min-height: 100%;
     background-size: cover;
     background-position: center;
@@ -65,8 +67,9 @@ main {
 }
 hr {
     position: relative;
-    border: 5px solid #82B1FF; 
+    border: 0.5vh solid #82B1FF; 
     border-radius: 300px; 
+    background-color: #82B1FF;
     height: 0px;
     width: 200px;
     animation: fading 4s;
@@ -79,25 +82,33 @@ nav {
     margin: 15px 15px 15px 0;
     display: flex;
     flex-direction: column;
+    float: left;
     width: 150px;
     background-color: #82B1FF;
+    box-shadow: 4px -4px 5px 0.5px rgba(0,0,0,0.29);
     opacity: 0.98;
     z-index: 1000;
+
+
 }
-.btn-cont > button {
+.btn-cont > a {
     background-color: transparent;
     border: none;
     text-align: left;
     font-size: 18px;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
     color: white;
     cursor: pointer;
-    width: 100%;
 }
 .btn-big{
     padding-left: 20px;
+    width: 130px;
 }
 .btn-sml{
-	padding-left: 60px;
+	padding-left: 45px;
+    width: 105px;
 }
 .bar-cont{
     display: inline-block;
@@ -129,21 +140,14 @@ nav {
     height: initial;
     transition: fading 1s;
 }
-@media only screen and (min-width: 601px) {
-    .bar-cont{
-        display: none;
-    }
+#intro{
+    float: left;
+    display: inline-block;
+    min-height: 150px;
+
 }
-@media only screen and (max-width: 600px) {
-    nav {
-        position: fixed;
-        margin: 0;
-        width: 47px;
-        height: 40px;
-    }
-    .btn-cont{
-        display: none;
-    }
-}
-@media only screen and (min-width: 769px) {#alt-brand{display: none;}}
-@media only screen and (max-width: 768px) {#brand {display: none;}}
+@media only screen and (max-width: 500px) {h1{font-size: 70px;margin: 0 5px 0 5px;}h2{font-size: 30px;margin: 0 5px 0 5px;}}
+@media only screen and (min-width: 601px) {.bar-cont{display: none;}}
+@media only screen and (max-width: 600px) {nav {position:fixed;margin:0;width:47px;height:40px;}.btn-cont{display: none;}}
+@media only screen and (min-width: 1181px) {#alt-brand{display: none;}}
+@media only screen and (max-width: 1180px) {#brand {display: none;}}
