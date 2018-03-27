@@ -140,13 +140,7 @@ nav {
     height: initial;
     transition: fading 1s;
 }
-#intro{
-    float: left;
-    display: inline-block;
-    min-height: 150px;
-
-}
-@media only screen and (max-width: 500px) {h1{font-size: 70px;margin: 0 5px 0 5px;}h2{font-size: 30px;margin: 0 5px 0 5px;}}
+@media only screen and (max-width: 500px) {h1{font-size: 70px;margin: 0 5px 0 5px;}h2{font-size: 1.3em;margin: 0 5px 0 5px;}}
 @media only screen and (min-width: 601px) {.bar-cont{display: none;}}
 @media only screen and (max-width: 600px) {nav {position:fixed;margin:0;width:47px;height:40px;}.btn-cont{display: none;}}
 @media only screen and (min-width: 1181px) {#alt-brand{display: none;}}
