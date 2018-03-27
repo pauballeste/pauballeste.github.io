@@ -40,14 +40,14 @@ h1 {
     position: relative; 
     font-family: 'Patua One', cursive;
     padding-top: 55vh;
-	font-size: 12vh;
+	font-size: 8vw;
     text-align: center;
     animation: firstmove 1s;
     margin: 0 25px 0 25px;
 }
 h2 {
     position: relative;
-    font-size: 5vh;
+    font-size: 4vw;
     font-family: 'Patua One', cursive;
     text-align: center;
     animation: firstmove 1s;
@@ -88,8 +88,6 @@ nav {
     box-shadow: 4px -4px 5px 0.5px rgba(0,0,0,0.29);
     opacity: 0.98;
     z-index: 1000;
-
-
 }
 .btn-cont > a {
     background-color: transparent;

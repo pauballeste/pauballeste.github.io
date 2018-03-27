@@ -34,13 +34,14 @@
 	});
 	</script>
 </head>
-<body>
+<body id="body">
 	<header id="header">
 		<div id="inici">
 			<h1 id="brand">Pau Ballesté Aguirre</h1><h1 id="alt-brand">Pau Ballesté</h1>
 			<hr>
 			<h2>Un portafoli personal</h2>
 		</div>
+	</header>
 		<nav id="nav">
 			<div class="bar-cont" onclick="animenubar(this)">
 				<div class="bar-1"></div>
@@ -57,7 +58,6 @@
 				<a class="btn-big" href="#about">Sobre mi</a>
 			</div>
 		</nav>
-	</header>
 	<main>
 		<div id="fotos"></div>
 		<div id="projectes"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit nulla, vehicula at felis non, maximus dictum urna. Maecenas molestie fringilla diam eu facilisis. Nulla facilisi. Phasellus malesuada vulputate lacus, sed egestas ex faucibus a. Pellentesque lorem justo, facilisis at ullamcorper nec, condimentum fermentum est. Fusce interdum nunc in blandit feugiat. Maecenas eget risus purus.
@@ -170,7 +170,7 @@ Donec a nisi in erat ultricies iaculis. Aenean fermentum pharetra metus eget ali
 		function animenubar(x) {
 			x.classList.toggle("change");
 			document.getElementById("nav").classList.toggle("visi");
-			document.getElementById("header").classList.toggle("dim");
+			document.getElementById("body").classList.toggle("dim");
 		}
 	</script>
 </body>
