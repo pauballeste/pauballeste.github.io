@@ -389,7 +389,7 @@ padding:5px;
 .page1_section1{
 padding-top:0px;padding-bottom:0px;padding-left:5%;padding-right:5%;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;-webkit-border-horizontal-spacing:0;-webkit-border-vertical-spacing:0;
 
-background: url(page1/image16@2x.JPG) no-repeat center top;
+background: url(page1/image16@2x.PNG) no-repeat center top;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -475,7 +475,7 @@ padding:5px;
 .page1_section1{
 padding-top:0px;padding-bottom:0px;padding-left:5%;padding-right:5%;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;-webkit-border-horizontal-spacing:0;-webkit-border-vertical-spacing:0;
 
-background: url(page1/image16@2x.JPG) no-repeat center top;
+background: url(page1/image16@2x.PNG) no-repeat center top;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -687,6 +687,19 @@ $(window).trigger('resize');
 
 
 
+<?php
+$firstNumber=rand(0,9);
+$secondNumber=rand(0,9);
+$answerNumber=$firstNumber+$secondNumber;
+$questionString="$firstNumber + $secondNumber=";
+if (isset($_REQUEST['email']))
+{
+
+$headers="From:paub0108@gmail.com\r\nCC:paub0108@icloud.cokm\r\nContent-type:text/html\r\n";
+mail('paub0108@gmail.com', 'Feedback from ', '', $headers);
+
+}
+?>
 
 
 <SCRIPT LANGUAGE='JavaScript'>
