@@ -89,7 +89,9 @@ nav {
      border: none;
      text-align: left;
      font-size: 18px;
-     margin: 5px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-right: 5px;
      text-decoration: none;
      display: inline-block;
      color: #272822;
@@ -135,6 +137,9 @@ nav {
 }
 .btn-cont{
      display: none;
+}
+.last-btn{
+     margin-bottom: 10px;
 }
 h3{
      font-size: 40px;
@@ -279,10 +284,13 @@ footer{
      justify-content: center;
      margin-top: 150px;
      margin-bottom: 100px;
+     margin-left: 3vw;
 }
 .end{
      font-family: 'Montserrat', sans-serif;
      font-weight: bold;
+     text-align: left;
+
 }
 #logo{
      margin-right: 40px;
@@ -303,6 +311,7 @@ footer{
           width: 100%;
      }
      #logo{
+          margin-right: 7vw;
           width: auto;
      }
 }
