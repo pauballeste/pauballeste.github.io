@@ -195,6 +195,7 @@ h4{
 }
 #carta > p {
      font-size: 18px;
+     line-height: 1.35;
 }
 #portfolio{
      background-image: url(../img/portfolio.jpg);
@@ -272,6 +273,7 @@ strong, b{
 }
 #cd > p{
      text-align: center;
+     line-height: 1.5;
 }
 p{
      margin-left: 40px;
@@ -290,10 +292,13 @@ footer{
      font-family: 'Montserrat', sans-serif;
      font-weight: bold;
      text-align: left;
-
 }
 #logo{
      margin-right: 40px;
+}
+a{
+     color: #d6ba1d;
+     font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
      p{
@@ -307,11 +312,28 @@ footer{
      #carta{
           padding: 40px 3vw 40px 3vw;
      }
-     img{
+     main > img{
           width: 100%;
      }
      #logo{
           margin-right: 7vw;
-          width: auto;
      }
+}
+::-moz-selection{
+    background: #FFD700;
+}
+::selection{
+    background: #FFD700;
+}
+h1::-moz-selection{
+    background: #d6ba1d;
+}
+h1::selection{
+    background: #d6ba1d;
+}
+h2::-moz-selection{
+    background: #d6ba1d;
+}
+h2::selection{
+    background: #d6ba1d;
 }
