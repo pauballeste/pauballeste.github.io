@@ -5,7 +5,6 @@
 @keyframes fading {
     from{opacity: 0} to{opacity: 1}
 }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, b, strong,
 a, abbr, acronym, address, big, cite, code,
@@ -137,8 +136,6 @@ nav {
 .btn-cont{
      display: none;
 }
-
-
 h3{
      font-size: 40px;
      text-align: center;
@@ -186,7 +183,8 @@ h4{
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     text-align: center;
+     text-align: justify;
+     text-justify: inter-word;
      padding: 40px;
      color: white;
 }
@@ -274,10 +272,25 @@ p{
      margin-left: 40px;
      margin-right: 40px;
 }
+footer{
+     display: flex;
+     flex-direction: row wrap;
+     align-items: center;
+     justify-content: center;
+     margin-top: 150px;
+     margin-bottom: 100px;
+}
+.end{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+}
+#logo{
+     margin-right: 40px;
+}
 @media only screen and (max-width: 768px) {
      p{
           margin-left: 3vw;
-          margin-right: 3vw;     
+          margin-right: 3vw;
      }
      .vid-cont{
           margin-right: 0;
@@ -288,7 +301,8 @@ p{
      }
      img{
           width: 100%;
-
-     }    
-}
+     }
+     #logo{
+          width: auto;
+     }
 }
