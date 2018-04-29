@@ -24,9 +24,6 @@ time, mark, audio, video {
      font-size: 100%;
      font: inherit;
 }
-html,body {
-     height: 100%;
-} 
 body {
  	line-height: 1;
      background-color: white;
@@ -43,6 +40,7 @@ h1 {
      color: #FFD700;
      font-size: 48px;
      font-weight: bold;
+     display: inherit;
      text-align: center;
      animation: firstmove 0.7s;
 }
@@ -58,7 +56,7 @@ h2 {
 }
 #inici{
      height: 100vh;
-     width: 100%; 
+     width: 100%;
      min-height: 100vh;
      background-image: url(../img/main.jpg);
      background-size: cover;
@@ -218,7 +216,6 @@ h4{
 .vid-cont{
      margin-right: 15vw;
      margin-left: 15vw;
-
 }
 .t-cont{
     line-height:1.5;
@@ -277,6 +274,21 @@ p{
      margin-left: 40px;
      margin-right: 40px;
 }
-.respo{
-     display: none;
+@media only screen and (max-width: 768px) {
+     p{
+          margin-left: 3vw;
+          margin-right: 3vw;     
+     }
+     .vid-cont{
+          margin-right: 0;
+          margin-left: 0;
+     }
+     #carta{
+          padding: 40px 3vw 40px 3vw;
+     }
+     img{
+          width: 100%;
+
+     }    
+}
 }
