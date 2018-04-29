@@ -284,9 +284,7 @@ footer{
      flex-direction: row wrap;
      align-items: center;
      justify-content: center;
-     margin-top: 150px;
-     margin-bottom: 100px;
-     margin-left: 3vw;
+     margin: 0 auto;
 }
 .end{
      font-family: 'Montserrat', sans-serif;
