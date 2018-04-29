@@ -33,7 +33,6 @@ body {
      min-width: 500px;
      color: black;  
      font-family: 'Open Sans', sans-serif;
-     word-break: break-all;
 }
 header {
      align-content: right;
@@ -271,10 +270,12 @@ strong, b{
 }
 #cd > p{
      text-align: center;
+
+}
+p{
      margin-left: 40px;
      margin-right: 40px;
 }
-
 
 
 
