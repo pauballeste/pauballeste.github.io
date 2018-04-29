@@ -81,7 +81,9 @@ nav {
      display: flex;
      flex-direction: column;
      float: left;
-     width: 150px;
+     margin:0;
+     width:47px;
+     height:40px;
      background-color: #FFD700;
      box-shadow: 4px -4px 5px 0.5px rgba(0,0,0,0.29);
      z-index: 1000;
@@ -114,7 +116,7 @@ nav {
      height: 5px;
      background-color: #272822;
      margin: 6px;
-     transition: 0.4s;
+     transition: 0.5s;
 }
 .change .bar-1 {
      transform: rotate(-45deg) translate(-8px, 7px);
@@ -135,8 +137,9 @@ nav {
      height: initial;
      transition: fading 1s;
 }
-@media only screen and (min-width: 601px) {.bar-cont{display: none;}}
-@media only screen and (max-width: 600px) {nav {position:fixed;margin:0;width:47px;height:40px;}.btn-cont{display: none;}}
+.btn-cont{
+     display: none;
+}
 
 
 h3{
