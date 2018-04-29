@@ -325,15 +325,3 @@ a{
 ::selection{
     background: #FFD700;
 }
-h1::-moz-selection{
-    background: #d6ba1d;
-}
-h1::selection{
-    background: #d6ba1d;
-}
-h2::-moz-selection{
-    background: #d6ba1d;
-}
-h2::selection{
-    background: #d6ba1d;
-}
