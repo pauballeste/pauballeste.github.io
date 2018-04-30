@@ -284,18 +284,9 @@ footer{
      flex-direction: row wrap;
      align-items: center;
      justify-content: center;
-     margin-left: 3vw;
-     margin-right: 3vw;
-}
-.fin{
-     display: flex;
-     flex-direction: row wrap;
-     align-items: center;
-     justify-content: center;
      margin: 0 auto;
      padding-top: 50px;
      padding-bottom: 100px;
-
 }
 .end{
      font-family: 'Montserrat', sans-serif;
